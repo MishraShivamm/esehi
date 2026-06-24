@@ -145,10 +145,15 @@ REST_FRAMEWORK = {
 # CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
-    os.getenv("FRONTEND_ORIGIN", "http://localhost:5173"),
-    "http://127.0.0.1:5173",
+    "https://potential-rotary-phone-44q69vwqgwc5rj4-5173.app.github.dev",
     "http://localhost:5173",
+    "http://127.0.0.1:5173",
 ]
+# CORS_ALLOWED_ORIGINS = [
+#     os.getenv("FRONTEND_ORIGIN", "http://localhost:5173"),
+#     "http://127.0.0.1:5173",
+#     "http://localhost:5173",
+# ]
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 # CORS_ALLOW_ALL_ORIGINS = True
