@@ -19,12 +19,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # DEBUG = os.getenv("DEBUG")
 
 # ALLOWED_HOSTS = []
+
 SECRET_KEY = "django-insecure-bookleaf-dev-secret-key-change-in-production"
-
 DEBUG = True
-
 ALLOWED_HOSTS = ["*"]
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -144,19 +142,26 @@ REST_FRAMEWORK = {
 
 # CORS_ALLOW_CREDENTIALS = True
 
-CORS_ALLOWED_ORIGINS = [
-    "https://potential-rotary-phone-44q69vwqgwc5rj4-5173.app.github.dev",
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-]
 # CORS_ALLOWED_ORIGINS = [
 #     os.getenv("FRONTEND_ORIGIN", "http://localhost:5173"),
 #     "http://127.0.0.1:5173",
 #     "http://localhost:5173",
 # ]
+
+# CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
-# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+    "dnt",
+    "origin",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+]
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=30),
@@ -166,3 +171,8 @@ SIMPLE_JWT = {
     'ALGORITHM': 'HS256',
     'SIGNING_KEY': SECRET_KEY,
 }
+
+SESSION_COOKIE_SAMESITE = "None"
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = "None"
+CSRF_COOKIE_SECURE = True
