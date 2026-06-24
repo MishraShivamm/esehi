@@ -18,8 +18,8 @@ class LoginView(TokenObtainPairView):
         access_token = response.data["access"]
         refresh_token = response.data["refresh"]
         
-        response.set_cookie(key="access_token", value=access_token, httponly=True, secure=False, samesite="lax")
-        response.set_cookie(key="refresh_token", value=refresh_token, httponly=True, secure=False, samesite="lax")
+        response.set_cookie(key="access_token", value=access_token, httponly=True, secure=True, samesite="None")
+        response.set_cookie(key="refresh_token", value=refresh_token, httponly=True, secure=True, samesite="None")
 
         response.data = { "message": "login Successful" }
         return response
@@ -40,16 +40,16 @@ class RefreshTokenView(APIView):
         refresh_token = request.COOKIES.get("refresh_token")
 
         if not refresh_token:
-            return Response({"message": "Refresh token is missing"},status= status.HTTP_401_UNAUTHORIZED)
+            return Response({"message": "Refresh token is missing"}, status=status.HTTP_401_UNAUTHORIZED)
         
         try:
             refresh = RefreshToken(refresh_token)
             access_token = str(refresh.access_token)
             response = Response({"message": "token refreshed"})
-            response.set_cookie(key="access_token", value=access_token, httponly=True, secure=False, samesite="lax")
+            response.set_cookie(key="access_token", value=access_token, httponly=True, secure=True, samesite="None")
             return response
         except Exception:
-            return Response({"detail": "Invalid refresh token"}, status= status.HTTP_401_UNAUTHORIZED)
+            return Response({"detail": "Invalid refresh token"}, status=status.HTTP_401_UNAUTHORIZED)
 
 class MeView(generics.RetrieveAPIView):
     permission_classes = [IsAuthenticated]
@@ -57,4 +57,3 @@ class MeView(generics.RetrieveAPIView):
 
     def get_object(self):
         return self.request.user
-    
