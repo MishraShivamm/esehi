@@ -17,4 +17,5 @@ print(name, type(age));
 
 x = input("Enter name");
 
-print("Hey hey"+ x);
+print("Hey hey"+ x); #conncatenation
+
