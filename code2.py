@@ -15,10 +15,11 @@ explicit
 # ****** Everything By Default jisko hum input() se input krvate hai vo as string store hota hai instead of number.
 
 
-age = input("Enter age");
+age = int(input("Enter age"));
 
 print (age);
-age1 = int(age);
+print (type(age));
+age1 = int(age + 1);
 print (age1);
 
 
