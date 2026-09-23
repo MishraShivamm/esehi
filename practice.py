@@ -77,13 +77,28 @@ Build a simple calculator which can perform addition, subtraction, multiplicatio
 """
 
 
-a = 7;
-b= 5;
+a = int(input("Enter value of A: "));
+b = int(input("Enter value of B: "));
+operation = input("Enter operation (+, -, *, /, %, **): ");
 
-print (a + b);
-print (a - b);
-print (a * b);
-print (a / b);
-print (a % b);
-print (a // b);
-print (a ** b);
+if operation == "+":
+    result = a + b;
+    print("Result: ", result);
+
+elif operation == "-":
+    result = a - b;
+    print("Result: ", result);
+elif operation == "*":
+    result = a * b;
+    print("Result: ", result);
+elif operation == "/":
+    result = a / b;
+    print("Result: ", result);
+elif operation == "%":
+    result = a % b;
+    print("Result: ", result);
+elif operation == "**":
+    result = a ** b;
+    print("Result: ", result);
+else:
+    print("Invalid operation!");
