@@ -28,6 +28,8 @@ example: int(), float(), str()
 
 Conditional Statements: Used to execute different blocks of code based on 
 certain conditions. example: if, elif, else
+
+
 """
 age = 24;
 if age >= 18:
