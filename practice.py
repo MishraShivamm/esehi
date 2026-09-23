@@ -52,7 +52,7 @@ Take price of 3 products as input (eg - 99.8, 23.56, 16.15)
 
 Take a superhero name as input & check if it starts with 's' /'S' or not.
 
-"""
+
 
 product_price1 =  99.8;
 product_price2 = 23.56;
@@ -66,3 +66,24 @@ print (total_price , avg_price);
 name = "IronMan";
 print ('s' in name);
 print ('S' in name); 
+
+"""
+
+
+"""
+EXERCISE 4:
+Build a simple calculator which can perform addition, subtraction, multiplication, modulo and division operations on two numbers.
+
+"""
+
+
+a = 7;
+b= 5;
+
+print (a + b);
+print (a - b);
+print (a * b);
+print (a / b);
+print (a % b);
+print (a // b);
+print (a ** b);
