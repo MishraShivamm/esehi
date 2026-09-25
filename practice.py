@@ -119,7 +119,7 @@ Take two integers as input a and b.
 Find and print the first nmber between 1 and 1000 that is divisible by both numbers.
 
 
-"""
+
 
 #exercise 5 example
 print("Odd numbers from 1 to 20:")
@@ -132,3 +132,27 @@ num = 1 ;
 while num <=20:
     print(num);
     num+=2;
+
+
+#exercise 6 example
+print("Table of 57:")
+for i in range(1,571):
+    if(i%57 == 0):
+        print(i);
+
+#or
+
+for i in range(1, 11):
+    print(i * 57);
+
+"""
+
+#erercise 7 example
+
+print("Multiples of 3 from 1 to 50 (skipping 15):")
+for i in range(1, 51):
+    if(i == 15):
+        continue
+    
+    if i % 3 ==0:
+        print(i);
