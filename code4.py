@@ -20,6 +20,10 @@ transfers control to the next statement after the loop.
 
 continue : The continue statement is used to skip the current iteration of a 
 loop
+
+iterate : The iterate statement is used to repeat a block of code for each item in a
+sequence. It allows you to perform operations on each item in the sequence without
+having to write repetitive code. The for loop is commonly used for iteration in Python.
 """
 
 #Range function example
@@ -55,5 +59,20 @@ print("End code")
 
 #for loop example
 print("\nFor loop example:")
-for i in range(5):
+for i in range(1,6,2):
     print(i)
+
+
+
+for i in range(1, 11):
+    if i%2 ==0:
+        print(i ,"is even")
+
+
+#break and continue example
+print("\nBreak and continue example:")
+for i in range(1, 51):
+    if (i == 15):
+        continue
+    if(i %5 ==0 ):
+        print(i)
