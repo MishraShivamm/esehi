@@ -22,3 +22,9 @@ Doing or keeping something that is unnecessary because the same thing is already
 def sum(a, b):
     return a + b
 print(sum(5, 10))
+
+def gst(price):
+    gst_amount = price * 0.18
+    total_price = price + gst_amount
+    return total_price
+print(gst(100))
