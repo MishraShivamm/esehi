@@ -118,7 +118,7 @@ Exercise 8:
 Take two integers as input a and b.
 Find and print the first number between 1 and 1000 that is divisible by both numbers.
 
-"""
+
 
 
 #exercise 5 example
@@ -165,3 +165,69 @@ for i in range(1, 1001):
     if i % a == 0 and i % b == 0:
         print(i)
         break
+        
+
+
+
+"""
+
+
+
+"""
+Exercise 9:
+Given a list of roll numbers :[101,102,105,101,108,105,110]. print all unique roll number in the list
+
+
+
+Exercise 10:
+given Employee records in the formof list of tuples where each tuple contains:
+(Employee ID, Employee NAme, Salary).
+
+Example - [
+(101,"Alice", 50000),
+(102,"Bob", 60000),
+(103,"Charlie", 55000)]
+
+
+Ask user to enter Employee ID and search it inside records. If the employee is not found, 
+print "Employee not found".
+"""
+
+#exercise 9 example
+roll_numbers = [101, 102, 105, 101, 108, 105, 110]
+unique_roll_numbers = set(roll_numbers) #The important thing about a set is: A set does not keep duplicate values.
+print("Unique roll numbers:", unique_roll_numbers);
+
+
+
+
+#exercise 10 example
+employee_records = [
+    (101, "Alice", 50000),
+    (102, "Bob", 60000),
+    (103, "Charlie", 55000)
+]
+emp_id = int(input("Enter employee Id"));
+for emp in employee_records:
+    if emp[0] == emp_id:
+        print("Employee found:",emp)
+        break
+
+
+# <--------------------- OR --------------------->
+
+
+employee_records = [
+    (101, "Alice", 50000),
+    (102, "Bob", 60000),
+    (103, "Charlie", 55000)
+]
+employee_id = int(input("Enter Employee ID to search: "))
+found = False
+for record in employee_records:
+    if record[0] == employee_id:
+        print(f"Employee found: {record[1]}, Salary: {record[2]}")
+        found = True
+        break
+if not found:
+    print("Employee not found")
