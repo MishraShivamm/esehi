@@ -20,5 +20,5 @@ Doing or keeping something that is unnecessary because the same thing is already
 
 
 def sum(a, b):
-    print (a + b);
-print(sum(5, 10));
+    return a + b
+print(sum(5, 10))
