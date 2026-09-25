@@ -44,8 +44,16 @@ while count <= 5:
 print("End code")
 
 
-number = 1;
-while number<=9:
+number = 9;
+while number>=0:
     print(number * "*")
-    number +=1
+    number -=1
 print("End code")
+
+
+
+
+#for loop example
+print("\nFor loop example:")
+for i in range(5):
+    print(i)
