@@ -11,8 +11,8 @@ print("My name is" , first_name , last_name ," and my age is" , age ,
 
  # this is f string command:
 print(f"My name is {first_name} {last_name} and my age is {age}and my height is {height} AND I'm {secret}");
-
 """
+
 
 
 #EXERCISE 2
@@ -74,7 +74,7 @@ print ('S' in name);
 EXERCISE 4:
 Build a simple calculator which can perform addition, subtraction, multiplication, modulo and division operations on two numbers.
 
-"""
+
 
 
 a = int(input("Enter value of A: "));
@@ -102,3 +102,33 @@ elif operation == "**":
     print("Result: ", result);
 else:
     print("Invalid operation!");
+
+"""
+
+"""Exercise 5:
+Print all odd numbers from 1 to 20.
+
+Exercise 6:
+print the table of 57.
+
+Exercise 7:
+Print alll the multiples of 3 from 1 to 50. but skip 15.
+
+Exercise 8:
+Take two integers as input a and b.
+Find and print the first nmber between 1 and 1000 that is divisible by both numbers.
+
+
+"""
+
+#exercise 5 example
+print("Odd numbers from 1 to 20:")
+for i in range(1, 21):
+    if i % 2 != 0:
+        print(i)    
+
+# or 
+num = 1 ;
+while num <=20:
+    print(num);
+    num+=2;
