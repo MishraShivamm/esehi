@@ -46,6 +46,6 @@ print("End code")
 
 number = 1;
 while number<=9:
-    print(number)
-    number +=3
+    print(number * "*")
+    number +=1
 print("End code")
