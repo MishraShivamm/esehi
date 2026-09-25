@@ -47,3 +47,14 @@ print(my_dict, type(my_dict), len(my_dict));
 #tuple example
 my_tuple = (1, 2, 3, "hello", True);
 print(my_tuple, type(my_tuple), len(my_tuple), my_tuple.count(2), my_tuple.index("hello"));    
+
+
+
+
+
+
+
+# mutable data types are generally more slower than immutable data types because they require more memory 
+# and processing power to manage their state. immutable data types, on the other hand, are generally faster 
+# because they can be optimized for performance and do not require additional memory or processing power to 
+# manage their state.
