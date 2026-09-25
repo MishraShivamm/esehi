@@ -191,7 +191,7 @@ Example - [
 
 Ask user to enter Employee ID and search it inside records. If the employee is not found, 
 print "Employee not found".
-"""
+
 
 #exercise 9 example
 roll_numbers = [101, 102, 105, 101, 108, 105, 110]
@@ -231,3 +231,67 @@ for record in employee_records:
         break
 if not found:
     print("Employee not found")
+
+
+"""
+"""
+Exercise 11:
+Write a function to check if a number is even or odd.
+
+Exercise 12:
+Write a function to count the number of vowels in a given string.
+
+Exercise 13:
+Write a function to check if the number is prime or not.
+
+
+Exercise 14:
+Write a function to return the average marks if a list of marks is passed as parameter to the function.
+
+
+"""
+
+#Exercise 11 example
+def check_even_odd(num):
+    if num %2 ==0:
+        return"The number is even"
+    else:
+        return "The number is odd"
+
+print(check_even_odd(5));
+print(check_even_odd(20));
+
+
+
+#exercise 12 example
+def count_vowels(string):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in string:
+        if char in vowels:
+            count += 1
+    return count
+
+print(count_vowels(set("Hello, World!")));
+
+#exercise 13 example
+def is_prime(num):
+    if num <= 1:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+print(is_prime(17));
+print(is_prime(20));
+
+
+#exercise 14 example
+def average_marks(marks):
+    if len(marks) == 0:
+        return 0
+    return sum(marks) / len(marks)
+
+print(average_marks([85, 90, 78, 92, 88]));
+
