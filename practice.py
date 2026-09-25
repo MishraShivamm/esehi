@@ -116,9 +116,9 @@ Print alll the multiples of 3 from 1 to 50. but skip 15.
 
 Exercise 8:
 Take two integers as input a and b.
-Find and print the first nmber between 1 and 1000 that is divisible by both numbers.
+Find and print the first number between 1 and 1000 that is divisible by both numbers.
 
-
+"""
 
 
 #exercise 5 example
@@ -145,7 +145,7 @@ for i in range(1,571):
 for i in range(1, 11):
     print(i * 57);
 
-"""
+
 
 #erercise 7 example
 
@@ -156,3 +156,12 @@ for i in range(1, 51):
     
     if i % 3 ==0:
         print(i);
+
+
+#erecise 8 example
+a = int(input("Enter first integer (a): "))
+b = int(input("Enter second integer (b): "))
+for i in range(1, 1001):
+    if i % a == 0 and i % b == 0:
+        print(i)
+        break
