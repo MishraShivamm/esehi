@@ -24,7 +24,6 @@ def sum(a, b):
 print(sum(5, 10))
 
 def gst(price):
-    gst_amount = price * 0.18
-    total_price = price + gst_amount
+    total_price = price + price *0.18
     return total_price
-print(gst(100))
+print(gst(133))
