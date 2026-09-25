@@ -27,3 +27,4 @@ def gst(price):
     total_price = price + price *0.18
     return total_price
 print(gst(133))
+
