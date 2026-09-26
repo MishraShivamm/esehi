@@ -83,3 +83,28 @@ reversed_input = string_name[::-1]
 print("Reversed string:", reversed_input)
 
 """
+
+
+#Number Guessing Game
+#Generate a random integer from 1 to 20. Give the user 5 attempts and report whether they guessed it.
+
+import random
+
+
+num = random.randint(1,20)
+guess = 0
+attempts = 0
+
+while attempts <= 5:
+    guess = int(input("Enter your guess: "))
+
+    if guess == num:
+        print("You guessed it right!")
+        break
+    else:
+        print("Wrong guess! Try Again.")
+        attempts += 1
+
+    if attempts == 5:
+        print("You are out of attempts!")
+        print("The number was:", num)
