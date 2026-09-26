@@ -59,7 +59,7 @@ nm = range(1,11,1)
 for i in nm:
     print(num *i)
 
-"""
+
 
 
 #Count Vowels
@@ -71,3 +71,10 @@ for char in string:
     if char.lower() in vowels:
         count += 1
 print("Number of vowels:", count)
+
+
+
+"""
+
+
+
