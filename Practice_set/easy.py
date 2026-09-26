@@ -74,10 +74,12 @@ print("Number of vowels:", count)
 
 
 
-"""
+
 #Reverse a String
 #Take a string and print it reversed.
 
 string_name = input("Enter a string: ")
 reversed_input = string_name[::-1]
 print("Reversed string:", reversed_input)
+
+"""
