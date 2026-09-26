@@ -48,4 +48,26 @@ else:
     print("Grade: F")
 
 
+
+
+# Multiples
+# Take n and print all multiples of n from 1 through 10.
+
+num = int(input("enter your number : "))
+nm = range(1,11,1)
+
+for i in nm:
+    print(num *i)
+
 """
+
+
+#Count Vowels
+#Take a string and count how many vowels (a, e, i, o, u) it contains, ignoring case.
+string = input("Enter a string: ")
+vowels = "aeiou"
+count = 0
+for char in string:
+    if char.lower() in vowels:
+        count += 1
+print("Number of vowels:", count)
