@@ -82,8 +82,6 @@ string_name = input("Enter a string: ")
 reversed_input = string_name[::-1]
 print("Reversed string:", reversed_input)
 
-"""
-
 
 #Number Guessing Game
 #Generate a random integer from 1 to 20. Give the user 5 attempts and report whether they guessed it.
@@ -108,3 +106,11 @@ while attempts <= 5:
     if attempts == 5:
         print("You are out of attempts!")
         print("The number was:", num)
+
+        
+
+#Prime Check
+#Write a function is_prime(n) that returns True if n is prime and False otherwise.
+
+"""
+
