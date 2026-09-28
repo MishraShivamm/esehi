@@ -123,5 +123,3 @@ def is_prime(num):
 
 print(is_prime(17));
 print(is_prime(20));
-
-
