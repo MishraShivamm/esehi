@@ -33,4 +33,5 @@ print(dir(math))  # This will print all the attributes and methods of the math m
 
 from math import sqrt,log2
 print(sqrt(16))  # This will print the square root of 16
+print(sqrt(25))  # This will print the square root of 25
 print(log2(16))  # This will print the base-2 logarithm of 16
