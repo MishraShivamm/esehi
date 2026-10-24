@@ -10,15 +10,12 @@ Types of Functions in Python:
 --> Module Functions: These are the functions that are defined in external modules and can be imported and used in 
  the code.examples of module functions are math.sqrt(), random.randint(), etc.
 
- 
 
 Redundancy in simple terms means:
 
 Doing or keeping something that is unnecessary because the same thing is already there or already done.
  
 """
-
-
 def sum(a, b):
     return a + b
 print(sum(5, 10))
